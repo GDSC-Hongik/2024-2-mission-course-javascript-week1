@@ -1,0 +1,18 @@
+
+h1 {
+    font-weight: bold;
+    color: rgb(0, 0, 112);
+}
+
+
+
+body {
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 20px;
+    border: 2px solid #bbbbbb;
+    border-radius: 50px;
+}
