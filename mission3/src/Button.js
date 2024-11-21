@@ -1,7 +1,7 @@
 import React from "react";
 
-function Button() {
-  return <button type="button">버튼</button>;
-}
+const Button = () => {
+  return <h1>안녕하세요</h1>;
+};
 
 export default Button;
