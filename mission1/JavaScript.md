@@ -1,4 +1,4 @@
-# 자바 
+# 자바스크립트
 시작은 항상 print로
 ```js
 console.log('hello world');
