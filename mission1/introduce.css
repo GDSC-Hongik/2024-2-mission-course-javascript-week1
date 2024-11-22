@@ -1,0 +1,47 @@
+/* .d {
+    background-color: azure;
+} */
+
+.d1 {
+    /* background-color: rgb(151, 159, 162); */
+    background: rgba(240, 199, 111, 0.3);
+    width: 450px;
+    padding: 10px;
+    position: relative;
+    top: 10px;
+    /* border: 25px solid rgb(132, 132, 174); */
+    margin: auto;
+  }
+  
+  .d2 {
+    padding : 10px;
+    text-align: center;
+  }
+
+  .d3 {
+    padding: 10px;
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    /* background-color: azure; */
+  }
+
+  h2 {
+    background-color: antiquewhite;
+    text-align: center;
+  }
+
+  img {
+    width: 30%;
+    height : 30%;
+    display: block;
+    margin : auto;
+  }
+
+  button {
+    background-color: beige;
+    border-color: beige;
+    border-radius: 15%;
+  }
