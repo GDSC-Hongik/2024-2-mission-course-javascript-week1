@@ -75,15 +75,20 @@ href 어트리뷰트는 이동하고자 하는 경로(path, 파일 시스템 상
 "border" 표 테두리 두께 / "rowspan" 해당 셀이 점유하는 행의 수 / "colspan" 해당 셀이 점유하는 열의 수
 
 ## Image & Multimedia Tag
-##### <img> tag 어트리뷰트
+##### img tag 어트리뷰트
 * src: 이미지 파일 경로 / alt: 이미지 파일이 없을 경우 표시되는 문장 / width: 이미지 너비 / height: 이미지 높이
-##### <audio> tag 어트리뷰트
+##### audio tag 어트리뷰트
 * src: 음악 파일 경로 / preload: 재생 전에 파일을 모두 불러올 것인지 지정 / autoplay: 음악 파일을 자동의 재생 개시할 것인지 지정 / loop: 음악을 반복할 것인지 지정 / controls: 음악 재생 도구를 표시할 것인지 지정
-##### <video> tag 어트리뷰트
+##### video tag 어트리뷰트
 * src: 동영상 파일 경로 / poster: 동영상 준비 중에 표시될 이미지 파일 경로 / preload: 재생 전에 동영상 파일을 모두 불러올 것인지 지정 / autoplay: 동영상 파일을 자동의 재생 개시할 것인지 지정 / loop: 동영상을 반복할 것인지 지정 / controls: 동영상 재생 도구를 표시할 것인지 지정 / width, height
 ## Forms
 ##### form
+* form tag - 사용자가 입력한 데이터 수집  
+* attribute  
+action=URL: 입력 데이터(form data)가 전송될 URL 지정  
+method=get/post: 입력 데이터(form data) 전달 방식 지정 = HTTP request method
 ##### input
+
 ##### select
 ##### textarea
 ##### button
