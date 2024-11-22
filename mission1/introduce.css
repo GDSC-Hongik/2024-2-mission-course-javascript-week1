@@ -1,0 +1,24 @@
+h1 {
+    background-color: rgb(255, 255, 233); /* 베경색 추가 */
+    color: rgb(70, 70, 70);
+    padding: 20px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+h2 {
+    font-weight: 400;
+    margin-top: 40px;
+}
+h3 {
+    font-weight: 400;
+    font-size: 1.3em;
+    margin-top: 40px;
+}
+body {
+    background-color: rgb(252, 235, 209);
+    margin: 100px;
+    font-weight: 300;
+}
+p {
+    color: rgb(48, 48, 48);
+}

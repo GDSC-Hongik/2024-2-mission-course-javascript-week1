@@ -1,6 +1,6 @@
 ## HTML5
 ##### 요소(Element)
-`<start tag>Contents<end tag>`
+`<start tag> Contents <end tag>`
 ##### 어트리뷰트(Attribute)
 * `<img src="html.png">`
 src - attribute name  
