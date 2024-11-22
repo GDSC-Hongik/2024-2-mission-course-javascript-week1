@@ -88,9 +88,19 @@ href 어트리뷰트는 이동하고자 하는 경로(path, 파일 시스템 상
 action=URL: 입력 데이터(form data)가 전송될 URL 지정  
 method=get/post: 입력 데이터(form data) 전달 방식 지정 = HTTP request method
 ##### input
-
+* input tag는 type 어트리뷰트에 의해 구분, form tag 내에 존재
+* 서버에 전송되는 데이터는 name 어트리뷰트를 키로, value 어트리뷰트를 값으로하여 `key=value`의 형태로 전송
+* button, checkbox, color, date, datetime, email, file, hidden 등
 ##### select
+* 복수개의 리스트에서 복수개의 아이템을 선택할 때 사용
+* 서버에 전송되는 데이터는 select 요소의 name 어트리뷰트를 키로, option 요소의 value 어트리뷰트를 값으로하여 `key=value`의 형태로 전송
+* select: select form 생성 / option: option 생성 / optgroup: option을 그룹화
 ##### textarea
+* 여러 줄의 글자를 입력할 때 사용
 ##### button
+* `<input type="button">`은 빈 태그이지만 button 태그는 아니므로 텍스트나 이미지 같은 콘텐츠를 사용할 수 있음
+* type 어트리뷰트는 반드시 지정하는 것이 바람직하며 어트리뷰트값으로 button, reset, submit를 지정할 수 있음
 ##### fieldset / legend
+* fieldset 태그는 관련된 입력 양식들을 그룹화할 때 사용
+* legend 태그는 fieldset 태그 내에서 사용되야 하며 그룹화된 fieldset의 제목을 정의
 ## Structure
