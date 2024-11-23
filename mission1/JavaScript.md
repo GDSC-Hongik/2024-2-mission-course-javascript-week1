@@ -24,10 +24,19 @@ pass-by-reference(참조에 의한 전달) 방식으로 전달
   * `object`
 #### 변수
 * `var` 
-  * 중복 선언 가능
+  * 재할당 가능
   * 함수 레벨 스코프 (Function Scope)를 가짐
   * 호이스팅 발생
 * `let`
+  * 재할당 가능
+  * 블록 스코프(Block Scope)
+  * 호이스팅 불가능
 * `const` 
+  * 재할당 불가능
+  * 블록 스코프(Block Scope)
+  * 호이스팅되지만 선언 전에 접근 불가
+  * 선언과 동시에 반드시 초기화 필요
 
-## Operator
+## Type coercion
+#### 타입 변환
+개발자에 의해 의도적으로 값의 타입을 변환하는 것을 명시적 타입 변환(Explicit coercion) 또는 타입 캐스팅(Type casting)이라 한다.
