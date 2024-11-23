@@ -1,0 +1,73 @@
+body {
+    background-color: beige;
+}
+.firstHead {
+    text-align: center;
+}
+.firstLine {
+    width: 840px;
+}
+.facePhoto {
+    width: 250px;
+    height: auto;
+    border-radius: 2em; 
+}
+.first {
+    position: relative;
+    margin: 20px auto;
+    background-color: rgb(231, 212, 158);
+    padding: 20px;
+    width: 800px;
+    height: 250px;
+    border-radius: 2em;
+}
+.photo {
+    position: absolute;
+    top: 33%;
+    left: 100px;
+    transform: translateY(-50%);
+    width: 150px;
+    height: 150px;
+}
+.List {
+    position: absolute;
+    top: 50%;
+    left: 400px;
+    transform: translateY(-50%);
+    width: 580px;
+}
+.secondLine {
+    position: relative;
+    margin: 20px auto 0;
+    width: 840px;
+}
+.second {
+    position: relative;
+    margin: 20px auto;
+    background-color: rgb(165, 238, 168);
+    border-radius: 2em;
+    padding: 20px;
+    width: 800px;
+    height: 250px;
+}
+.photo1 {
+    position: absolute;
+    top: 42%;
+    left: 30px;
+    transform: translateY(-50%);
+    width: 150px;
+    height: 150px;
+}
+.castle {
+    width: 350px;
+    height: auto;
+    border-radius: 2em;
+}
+.sentence {
+    max-width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 400px;
+    transform: translateY(-50%);
+    width: 580px;
+}
