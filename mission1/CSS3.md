@@ -288,3 +288,57 @@ content, padding/margin, width/height, border, border-radius 둥근 모서리
 ## Position
 요소의 위치를 정의  
 top, bottom, left, right 프로퍼티와 함께 사용하여 위치를 지정
+* static (기본위치)
+* relative (상대위치)
+기본 위치(static으로 지정되었을 때의 위치)를 기준으로 좌표 프로퍼티(top, bottom, left, right)를 사용하여 위치를 이동  
+static을 선언한 요소와 relative를 선언한 요소의 차이점은 좌표 프로퍼티의 동작 여부뿐이며 그외는 동일하게 동작함
+* absolute (절대위치)
+부모 요소 또는 가장 가까이 있는 조상 요소(static 제외)를 기준으로 좌표 프로퍼티(top, bottom, left, right)만큼 이동  
+relative, absolute, fixed 프로퍼티가 선언되어 있는 부모 또는 조상 요소를 기준으로 위치 결정  
+만일 부모 또는 조상 요소가 static인 경우, document body를 기준으로 하여 좌표 프로퍼티대로 위치  
+absolute 선언 시, block 레벨 요소의 width는 inline 요소와 같이 content에 맞게 변화되므로 적절한 width를 지정하여야 함
+* fixed (고정위치)
+부모 요소와 관계없이 브라우저의 viewport를 기준으로 좌표프로퍼티(top, bottom, left, right)을 사용하여 위치 이동  
+스크롤이 되더라도 화면에서 사라지지 않고 항상 같은 곳에 위치  
+fixed 프로퍼티 선언 시, block 요소의 width는 inline 요소와 같이 content에 맞게 변화되므로 적절한 width를 지정하여야 함
+
+#### z-index 프로퍼티
+z-index 프로퍼티에 큰 숫자값을 지정할수록 화면 전면에 출력  
+position 프로퍼티가 static 이외인 요소에만 적용
+
+#### overflow 프로퍼티
+자식 요소가 부모 요소의 영역를 벗어났을 때 처리 방법을 정의
+* visible: 영역을 벗어난 부분을 표시 (기본값)
+* hidden: 영역을 벗어난 부분을 잘라내어 보이지 않게 함
+* scroll: 영역을 벗어난 부분이 없어도 스크롤 표시(현재 대부분 브라우저는 auto과 동일하게 작동)
+* auto: 영역을 벗어난 부분이 있을때만 스크롤 표시
+
+## Float
+블록 레벨 요소를 가로 정렬하기 위해 사용
+* none: 요소를 떠 있게 하지 않는다. (기본값)
+* `float: right;` 요소를 오른쪽으로 이동
+* `float: left;` 요소를 왼쪽으로 이동
+#### 정렬
+* `float: left;` 왼쪽부터 가로 정렬  
+* `float: right;` 오른쪽부터 가로 정렬, 먼저 기술된 요소가 가장 오른쪽에 출력되므로 출력 순서가 역순이 됨  
+* float 프로퍼티는 좌측, 우측 가로 정렬만 할 수 있으므로 중앙 가로 정렬은 margin 프로퍼티를 사용해야 함
+#### width
+width 프로퍼티의 기본값은 100%이므로 width 프로퍼티값을 지정하지 않은 block 요소는 부모 요소의 가로폭을 가득 채운다  
+width 프로퍼티를 선언하지 않은 block 레벨 요소에 float 프로퍼티가 선언되면 width가 inline 요소와 같이 content에 맞게 최소화되고 다음 요소 위에 떠 있게(부유하게) 된다
+#### float 프로퍼티 관련 문제 해결 방법
+* float 프로퍼티가 선언된 요소와 float 프로퍼티가 선언되지 않은 요소간 margin이 사라지는 문제  
+float 프로퍼티를 선언하지 않은 요소(.d2)에 `overflow: hidden`프로퍼티 선언 -> float 프로퍼티가 없어서 제대로 표현되지 못하는 요소를 제대로 출력해줌
+* float 프로퍼티가 선언된 자식 요소를 포함하는 부모 요소의 높이가 정상적으로 반영되지 않는 문제  
+  * float 프로퍼티가 선언된 자식 요소의 부모 요소(.container)에 `overflow: hidden` 선언  
+  * `::after 가상 요소 선택자` 이용
+  * float 프로퍼티 대신 `display: inline-block;`을 선언
+
+## Inheritance & Cascading
+#### 상속(Inheritance)
+* 상위(부모, 조상) 요소에 적용된 프로퍼티를 하위(자식, 자손) 요소가 물려 받는 것
+* 상속되지 않는 경우(상속받지 않는 요소 또는 상속되지 않는 프로퍼티), inherit 키워드를 사용하여 명시적으로 상속받게 할 수 있다.
+#### 캐스캐이딩(Cascading)
+* 요소는 하나 이상의 CSS 선언에 영향을 받을 수 있다. 이때 충돌을 피하기 위해 CSS 적용 우선순위가 필요한데 이를 캐스캐이딩(Cascading Order)이라고 한다
+  * 중요도 - CSS가 어디에 선언 되었는지에 따라서 우선순위가 달라짐
+  * 명시도 - 대상을 명확하게 특정할수록 명시도가 높아지고 우선순위가 높아짐
+  * 선언순서 - 나중에 선언된 스타일이 우선 적용
