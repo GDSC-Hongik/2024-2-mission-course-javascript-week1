@@ -104,3 +104,6 @@ method=get/post: 입력 데이터(form data) 전달 방식 지정 = HTTP request
 * fieldset 태그는 관련된 입력 양식들을 그룹화할 때 사용
 * legend 태그는 fieldset 태그 내에서 사용되야 하며 그룹화된 fieldset의 제목을 정의
 ## Structure
+<div style="text-align: center;">
+<img src="https://poiemaweb.com/img/building-structure.png" width="50%">
+</div>
