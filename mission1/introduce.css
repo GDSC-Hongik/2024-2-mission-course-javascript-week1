@@ -1,0 +1,42 @@
+h1{
+    background-color: gray;
+    color:white;
+    width:100px;
+    border: 5px solid navy;
+}
+h2{
+    background-color: gray;
+    color:white;
+    width:100px;
+    border: 5px solid navy;
+}
+.container{
+    width: 100%;
+    min-height:100vh;
+    background: linear-gradient(0deg, blue, violet);
+    padding: 10px;
+}
+.hoby{
+    width : 50px;
+}
+.food{
+    width : 160px;
+}
+.self{
+    background-color: gray;
+    color:white;
+    border: 5px solid navy;
+    width:50%;
+}
+.burger{
+    background-color: gray;
+    color:white;
+    border: 5px solid navy;
+    width:50%;
+}
+.movie{
+    background-color: gray;
+    color:white;
+    border: 5px solid navy;
+    width:50%;
+}
