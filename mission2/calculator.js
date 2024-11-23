@@ -16,19 +16,16 @@ function div(a, b) {
 
 function calculate(input) {
     const [operand1, operator, operand2] = input.split(' ');
-    const num1 = parseInt(operand1, 10);
-    const num2 = parseInt(operand2, 10);
+    const n1 = parseInt(operand1, 10);
+    const n2 = parseInt(operand2, 10);
 
-    switch (operator) {
-        case '+':
-            return add(num1, num2);
-        case '-':
-            return sub(num1, num2);
-        case '*':
-            return mul(num1, num2);
-        case '/':
-            return div(num1, num2);
-        default:
-            return 'Invalid operator';
+    if (operator === '+') {
+        return add(n1, n2);
+    } else if (operator === '-') {
+        return sub(n1, n2);
+    } else if (operator === '*') {
+        return mul(n1, n2);
+    } else if (operator === '/') {
+        return div(n1, n2);
     }
 }
