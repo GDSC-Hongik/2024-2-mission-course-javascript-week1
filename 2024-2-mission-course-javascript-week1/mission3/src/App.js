@@ -1,16 +1,14 @@
 // import logo from './logo.svg';
 // import './App.css';
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+// import { Routes, Route, Link } from "react-router-dom";
 
 import Button from "./Button";
 
 function App() {
   return (
     <div className="App">
-      <button>
-        <Link to="/Button">버튼</Link>
-      </button>
+      <Button />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -25,9 +23,9 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Routes>
+      {/* <Routes>
         <Route path="/Button" element={<Button />} />
-      </Routes>
+      </Routes> */}
     </div>
   );
 }
